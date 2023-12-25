@@ -16,5 +16,36 @@ route.get("/login", (req, res) => {
     console.log(err.message);
   }
 });
-
+// teachers
+route.get("/teachers", (req, res) => {
+  try {
+    res.render("teacher");
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+// contact
+route.get("/contact", (req, res) => {
+  try {
+    res.render("contact");
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+// notice
+route.get("/notice", (req, res) => {
+  try {
+    res.render("notice");
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+// classes
+route.get("/classes", (req, res) => {
+  try {
+    res.render("classes");
+  } catch (err) {
+    console.log(err.message);
+  }
+});
 module.exports = route;

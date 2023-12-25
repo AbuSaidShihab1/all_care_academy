@@ -5,6 +5,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+  transition: 0.3s;
 }
 nav ul {
   display: flex;
@@ -16,7 +19,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 .other-button {
@@ -33,7 +36,7 @@ nav ul li a {
 .other-button button:nth-child(1) {
   background: none;
   border: none;
-  color: white;
+  color: black;
 }
 .other-button button:nth-child(2) {
   background-color: var(--maincolor);
@@ -46,5 +49,5 @@ nav ul li a {
   text-decoration: none;
 }
 .other-button button:nth-child(1) a {
-  color: white;
+  color: black;
 }

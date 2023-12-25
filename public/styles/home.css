@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +9,11 @@
 :root {
   --maincolor: #546dff;
   --iconcolor: #737588;
+  --subheadcolor: #f2bc00;
+}
+.activenavbar {
+  position: fixed;
+  transition: 0.3s;
 }
 /*--------------------------- header--------------------- */
 .container {
@@ -19,7 +25,10 @@
 .home {
   width: 100%;
   height: 100vh;
-  background: black;
+  background-image: url("https://thepixelcurve.com/html/upstudy/upstudy/assets/images/bg/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: black;
 
   background-image: repeating-linear-gradient(
       90deg,
@@ -52,7 +61,7 @@
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.9)
-    );
+    ); */
 }
 /* ---------------------hero section---------------------- */
 .hero {
@@ -82,16 +91,16 @@
 .theme-text h3 {
   font-weight: 400;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 .hero-left h1 {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: white;
+  color: black;
 }
 .hero-left p {
-  color: white;
+  color: black;
 
   font-size: 16px;
   line-height: 25px;
@@ -388,11 +397,58 @@
   color: var(--iconcolor);
   font-size: 20px;
 }
+/* --------------------------registration-advertisement-------------------- */
+.registration-advertisement {
+  width: 100%;
+  height: auto;
+  background-color: #f0f4f5;
+}
+.registrationsub-advertise {
+  width: 100%;
+  padding: 35px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.advertisementbox2 {
+  width: 40%;
+}
+.advertisementbox2 h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.advertisementbox2 h1 {
+  font-size: 35px;
+  color: var(--maincolor);
+  margin-bottom: 20px;
+}
+.advertisementbox2 button {
+  padding: 10px 40px 10px 40px;
+  height: 60px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: var(--maincolor);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+}
+.advertisementbox2 button i {
+  font-size: 25px;
+}
+/* ---------------------registration-advertisement------------------------------ */
 /* -----------------blog-------------------- */
 .blog-main {
   width: 100%;
   height: auto;
-  padding: 30px 100px;
+  padding: 60px 100px;
 }
 .blog-contaner {
   width: 100%;
@@ -455,11 +511,12 @@
 footer {
   width: 100%;
   height: auto;
-  background-color: #f6f6f6;
+  border-top: 1px solid #e5e5e5;
+  font-family: "Josefin Sans", sans-serif;
 }
 .footer-box1 {
   width: 100%;
-  padding: 20px 100px;
+  padding: 70px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -474,7 +531,7 @@ footer {
 }
 .footersub-box1 p {
   font-size: 17px;
-  color: var(--iconcolor);
+  color: #181818;
   line-height: 25px;
   margin-bottom: 10px;
 }
@@ -516,8 +573,8 @@ footer {
   width: 20%;
 }
 .footersub-box2 h2 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .footersub-box2 ul li {
@@ -526,15 +583,15 @@ footer {
 }
 .footersub-box2 ul li a {
   text-decoration: none;
-  color: var(--iconcolor);
+  color: #181818;
   font-size: 17px;
 }
 .footersub-box3 {
   width: 30%;
 }
 .footersub-box3 h2 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .footersub-box3 form {
